@@ -9,24 +9,24 @@
 </head>
 <body class="root">
   <header class="header">
-    <img class="header__logo" src="./images/header-logo.svg" alt="Логотип сайта в форме границ России и надписью 'Россия'">
-    <ul class="header__lang-list">
-        <li class="header__lang-item">
-            <a class="header__lang-link header__lang-link_active" href="#" lang="en">Ru</a>
+    <img class="header__logo" src="./images/header-logo.svg" alt="лого сайта в форме границ России и надписью 'Россия'">
+    <ul class="header__lang-selectors">
+        <li>
+            <a class="header__lang-link header__lang-link_active" href="#">Ru</a>
         </li>
-        <li class="header__language-item">
-            <a class="header__lang-link" href="#" lang="en">En</a>
+        <li>
+            <a class="header__lang-link" href="#">En</a>
         </li>
     </ul>
   </header>
-  <main>
+  <main class="main">
     <section class="lead">
       <h1 class="lead__title">Путешествия по России</h1>
       <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
-      <figure class="lead__figure">
-        <img class="lead__image" src="./images/lead-polka.jpg" alt="Схема пути поездом по России от Пскова до Улан-Удэ">
-        <figcaption class="lead__capture">ваша полка — верхняя</figcaption>
-      </figure>
+      <div class="lead__image-block">
+        <img class="lead__image" src="./images/lead-polka.jpg" alt="Схема пути поездки поездом по России от Пскова до Улан-Удэ">
+        <p class="lead__caption">ВАША ПОЛКА — ВЕРХНЯЯ</p>
+      </div>
     </section>
     <section class="intro">
       <h2 class="intro__title">Чего мы там не видели?</h2>
@@ -41,67 +41,41 @@
     </p>
       <ul class="intro__list">
         <li>Часовых поясов
-            <span class="intro__list-digit">11</span>
+            <span class="intro__list-statistics">11</span>
         </li>
         <li>Объектов природного наследия ЮНЕСКО
-            <span class="intro__list-digit">12</span>
+            <span class="intro__list-statistics">12</span>
         </li>
         <li>Объектов культурного наследия ЮНЕСКО
-            <span class="intro__list-digit">16</span>
+            <span class="intro__list-statistics">16</span>
         </li>
         <li>Природных заповедников
-            <span class="intro__list-digit">105</span>
+            <span class="intro__list-statistics">105</span>
         </li>
         <li>Аэропортов
-            <span class="intro__list-digit">241</span>
+            <span class="intro__list-statistics">241</span>
         </li>
       </ul>
     </section>
     <section class="photo-grid">
-      <ul class="photo-grid__list">
-        <li class="photo-grid__item">
-          <img src="./images/photo-grid-kupe-poezda.jpg" alt="Фотография, снятая из окна купе, с видом на берег с молодыми берёзами и озером" class="photo-grid__image">
-        </li>
-        <li class="photo-grid__item">
-          <img src="./images/photo-grid-gori-oblaka.jpg" alt="Фотография заснеженного горного хребта, снятая с высоты" class="photo-grid__image">
-        </li>
-        <li class="photo-grid__item">
-          <img src="./images/photo-grid-pole-sobaka.jpg" alt="Фотография поля с стогами сена и собакой, забравшейся на один из стогов" class="photo-grid__image">
-        </li>
-        <li class="photo-grid__item">
-          <img src="./images/photo-grid-les-tuman.jpg" alt="Фотография заснеженного хвойного леса, снятая с высоты" class="photo-grid__image">
-        </li>
-        <li class="photo-grid__item">
-          <img src="./images/photo-grid-koleso-led.jpg" alt="Фотография автомобильного колеса 'Лады' стоящей на льду замёрзшего Байкала" class="photo-grid__image">
-        </li>
-        <li class="photo-grid__item">
-          <img src="./images/photo-grid-baikal-beach.jpg" alt="Фотография, снятая, с побережья Байкала" class="photo-grid__image">
-        </li>
-        <li class="photo-grid__item">
-          <img src="./images/photo-grid-elbrus-gora.jpg" alt="Фотография заснеженного горного хребта горы Эльбрус, снятая с воздуха" class="photo-grid__image">
-        </li>
-        <li class="photo-grid__item">
-          <img src="./images/photo-grid-znak-volnorez.jpg" alt="Фотография дорожного знака на фоне волнорезов" class="photo-grid__image">
-        </li>
-        <li class="photo-grid__item">
-          <img src="./images/photo-grid-kamchatka-gori.jpg" alt="Фотография пейзажа полуострова Камчатка" class="photo-grid__image">
-        </li>
-        <li class="photo-grid__item">
-          <img src="./images/photo-grid-kamchatka-gori-big.jpg" alt="Фотография крупной горы на полуострове Камчатка" class="photo-grid__image">
-        </li>
-        <li class="photo-grid__item">
-          <img src="./images/photo-grid-baikal-gori.jpg" alt="Фотография скал на побережье рядом с водоемом" class="photo-grid__image">
-        </li>
-        <li class="photo-grid__item">
-          <img src="./images/photo-grid-gori-les-tuman.jpg" alt="Фотография, снятая с высоты, пейзажа гор, покрытых туманом и облаками" class="photo-grid__image">
-        </li>
-      </ul>
+      <img src="./images/photo-grid-kupe-poezda.jpg" alt="Первое фото сделано из купе поезда с видом на деревья" class="photo-grid__item">
+      <img src="./images/photo-grid-gori-oblaka.jpg" alt="Второе фото - горный хребет" class="photo-grid__item">
+      <img src="./images/photo-grid-pole-sobaka.jpg" alt="Третье фото - собака на фоне рассвета залезла на стог сена" class="photo-grid__item">
+      <img src="./images/photo-grid-les-tuman.jpg" alt="Четвёртое фото - еловый лес укрытый толстым слоем снега" class="photo-grid__item">
+      <img src="./images/photo-grid-koleso-led.jpg" alt="Пятое фото - колесо автомобиля на толстом льду" class="photo-grid__item">
+      <img src="./images/photo-grid-baikal-beach.jpg" alt="Шестое фото - побережье с песчаным пляжем" class="photo-grid__item">
+      <img src="./images/photo-grid-elbrus-gora.jpg" alt="Седьмое фото - горы крупным планом" class="photo-grid__item">
+      <img src="./images/photo-grid-znak-volnorez.jpg" alt="Восьмое фото - знак пешеходного перехода на фоне бетонных конструкций" class="photo-grid__item">
+      <img src="./images/photo-grid-kamchatka-gori.jpg" alt="Девятое фото - горы покрытые желтой травой" class="photo-grid__item">
+      <img src="./images/photo-grid-kamchatka-gori-big.jpg" alt="Десятое фото - Фотография горы и зеленой долины" class="photo-grid__item">
+      <img src="./images/photo-grid-baikal-gori.jpg" alt="Одиннадцатое фото - скалы рядом с побережьем" class="photo-grid__item">
+      <img src="./images/photo-grid-gori-les-tuman.jpg" alt="Двенадцатое фото - горы в тумане" class="photo-grid__item">
     </section>
     <section class="places">
-      <article class="place">
+      <div class="place">
         <h2 class="place__title">Куршская коса</h2>
-        <div class="place__site">
-          <h3 class="place__link-heading" lang="en">URL</h3>
+        <div class="place__info">
+          <h3 class="place__url-heading">URL</h3>
           <a class="place__link" href="http://park-kosa.ru" target="_blank" rel="noopener">park-kosa.ru</a>
         </div>
         <img class="place__image" src="./images/place-kosa.jpg" alt="Фотография Куршского залива ">
@@ -119,11 +93,11 @@
                                       мест исключает суету, окуная в спокойствие 
                                       природы и запах стального, прохладного моря.</p>
         </div>
-      </article>
-      <article class="place">
+      </div>
+      <div class="place">
         <h2 class="place__title">Кольский</h2>
-        <div class="place__site">
-          <h3 class="place__link-heading" lang="en">URL</h3>
+        <div class="place__info">
+          <h3 class="place__url-heading">URL</h3>
           <a class="place__link" href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" target="_blank" rel="noopener">National Geographic</a>
         </div>
         <img class="place__image" src="./images/place-kolsky.jpg" alt="Фотография заснеженных гор Кольского полуострова">
@@ -142,14 +116,14 @@
                                       северное сияние начинает сбываться с билетом 
                                       в Мурманск.</p>
         </div>
-      </article>
-      <article class="place">
+      </div>
+      <div class="place">
         <h2 class="place__title">Алтай</h2>
-        <div class="place__site">
-          <h3 class="place__link-heading" lang="en">URL</h3>
+        <div class="place__info">
+          <h3 class="place__url-heading">URL</h3>
           <a class="place__link" href="https://www.youtube.com/watch?v=7ZEsoV7kWAQ" target="_blank" rel="noopener">YouTube</a>
         </div>
-        <img class="place__image" src="./images/place-altai.jpg" alt="Фотография с видом зеленого леса с ноутбуком на первом плане снятая с веранды дома">
+        <img class="place__image" src="./images/place-altai.jpg" alt="Фотография макбука, стоящего на столе на фоне густого леса">
         <div class="place__paragraphs">
           <p class="place__paragraph">Алтай — одно из красивейших мест в России.
                                       В первую очередь из-за гор: если ехать вдоль хребта, 
@@ -164,14 +138,14 @@
                                       пасутся косули. И знаменитые манулы — тоже 
                                       обитатели Алтайского края.</p>
         </div>
-      </article>
-      <article class="place">
+      </div>
+      <div class="place">
         <h2 class="place__title">Зимний Байкал</h2>
-        <div class="place__site">
-          <h3 class="place__link-heading" lang="en">URL</h3>
+        <div class="place__info">
+          <h3 class="place__url-heading">URL</h3>
           <a class="place__link" href="https://vk.com/baikalmile" target="_blank" rel="noopener">https://vk.com/baikalmile</a>
         </div>
-        <img class="place__image" src="./images/place-winter-baikal.jpg" alt="Фотография глубоко промерзшего синего льда Байкала с трещинами">
+        <img class="place__image" src="./images/place-winter-baikal.jpg" alt="Фотография толстого слоя льда с трещинами">
         <div class="place__paragraphs">
           <p class="place__paragraph">Всем известен Байкал как крупнейшее озеро
                                       в мире. Многие также знают, что это самый большой 
@@ -185,11 +159,11 @@
                                       фестивале «Байкальская миля» был поставлен 
                                       мировой рекорд — 197.011 км/ч.</p>
         </div>
-      </article>
-      <article class="place">
+      </div>
+      <div class="place">
         <h2 class="place__title">Карелия</h2>
-        <div class="place__site">
-          <h3 class="place__link-heading" lang="en">URL</h3>
+        <div class="place__info">
+          <h3 class="place__url-heading">URL</h3>
           <a class="place__link" href="http://vodlozero.ru" target="_blank" rel="noopener">http://vodlozero.ru/</a>
         </div>
         <img class="place__image" src="./images/place-karelia.jpg" alt="Фотография пейзажа реки и леса на её побережье">
@@ -200,18 +174,18 @@
                                       В девственном лесу на сотню километров не встретишь тропы. А на редких тропинках деревья
                                       в паре метров от земли помечены медвежьими когтями. Чтобы все знали, кто тут хозяин.</p>
         </div>
-      </article>
+      </div>
     </section>
     <section class="cover">
-        <a class="cover__link" href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank" rel="noopener">
-          <h2 class="cover__title">До Байкала «на собаках»</h2>
-          <p class="cover__subtitle">По мотивам учебной темы о Транссибе 
-                                    — путешествие от столицы до Байкала 
-                                    на электричках.</p>
-        </a>
+      <a class="cover__overlay" href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank" rel="noopener">
+        <h2 class="cover__title">До Байкала «на собаках»</h2>
+        <p class="cover__subtitle">По мотивам учебной темы о Транссибе 
+                                  — путешествие от столицы до Байкала 
+                                  на электричках.</p>  
+      </a>                             
     </section>
     <section class="footer">
-      <nav class="footer__nav">
+      <nav class="footer__menu">
         <ul class="footer__links">
           <li class="footer__link">
             <a class="footer__link-text" href="https://yandex.ru/maps" target="_blank" rel="noopener">Карты</a>
