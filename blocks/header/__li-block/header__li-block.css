@@ -1,0 +1,7 @@
+.header__li-block {
+    padding-right: 18px;
+}
+
+.header__li-block:last-child {
+    padding: 0;
+}

@@ -2,7 +2,7 @@
     max-width: 984px;
     display: grid;
     grid-template-columns: 460px 484px;
-    gap: 40px 32px;
+    gap: 48px 40px;
     padding-bottom: 80px;
 }
 
@@ -13,9 +13,8 @@
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .place {
         max-width: 928px;
-        grid-template-columns: 460px 484px;
+        grid-template-columns: 440px 456px;
         gap: 32px 27px;
-        padding-bottom: 72px;
     }
 }
 
@@ -24,7 +23,7 @@
         max-width: 720;
         grid-template-columns: 340px 352px;
         gap: 28px 25px;
-        padding-bottom: 72px;
+        padding-bottom: 73px;
     }
 }
 
