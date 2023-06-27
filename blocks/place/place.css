@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 768px) {
     .place {
-        max-width: 720;
+        max-width: 720px;
         grid-template-columns: 340px 352px;
         gap: 28px 25px;
         padding-bottom: 73px;
@@ -36,3 +36,8 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+    .place:last-child {
+        padding-bottom: 66px;
+    }
+}
