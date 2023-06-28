@@ -1,15 +1,3 @@
 .place__info {
     align-self: end;
 }
-
-@media screen and (max-width: 768px) {
-    .place__info {
-        padding-bottom: 20px;
-    }
-}
-
-@media screen and (max-width: 680px) {
-    .place__info {
-        padding-bottom: 0;
-    }
-}
